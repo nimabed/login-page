@@ -7,22 +7,28 @@ import fourthImage from './assets/image-4.png'
 import fifthImage from './assets/image-5.png'
 
 
-
 export function MainContainer() {
 
   return (
     <>
       <div className="relative w-full sm:flex">
-        <div className="hidden w-full sm:block bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
+        <div className="hidden w-full sm:flex flex-col gap-y-3 justify-center items-center bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
+        {/* Desktop Title */}
+          <span className="text-white text-6xl font-semibold">
+            Let's make every day <br />Meaningful together.
+          </span>
+          <span className="text-white font-semibold">"Building meaningful experiences together."</span>
         </div>
         
+        {/* Underlay boxes for rounding top and bottom center of page  */}
         <div className="hidden sm:flex flex-col justify-between align-items-center absolute left-[50%] translate-x-[-50%] z-0 h-full">
           <div className="size-[100px] bg-gray-100"></div>
           <div className="size-[100px] bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
         </div>
 
-        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] right-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
-        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] bottom-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
+        {/* Underlay boxes for rounding top right and bottom left of page */}
+        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] right-0 bg-[#3971FF]"></div>
+        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] bottom-0 bg-[#3971FF]"></div>
 
         {/*----- Content Wrapper -----*/}
         <div className="relative sm:w-full h-screen rounded-bl-[3rem] rounded-tr-[3rem] sm:rounded-bl-[3rem] bg-gray-100  sm:rounded-tr-none  z-1 pt-[4rem]">
@@ -96,7 +102,7 @@ export function MainContainer() {
               <span className="w-full border-t border-gray-200"></span>
             </div>
             {/*----- Footer logo images -----*/}
-            <div className="flex justify-between max-w-[350px] m-auto">
+            <div className="flex justify-between max-w-[350px] m-auto mb-[40px]">
               <a href="#" className="sm:order-2">
                 <img src={fifthImage} alt="fifthImage" className="size-13" />
               </a>
@@ -112,6 +118,12 @@ export function MainContainer() {
               <a href="#" className="sm:order-1">
                 <img src={firstImage} alt="firstImage" className="size-13" />
               </a>
+            </div>
+
+            <div className="max-w-[320px] m-auto text-center">
+              <span className="text-gray-700">Already have an account? 👉
+                <a href="#" className="underline text-blue-500 font-semibold ml-2">Sign In</a>
+              </span>
             </div>
 
           </div>
