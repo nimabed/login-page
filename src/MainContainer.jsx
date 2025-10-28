@@ -1,6 +1,10 @@
-// import background from './assets/bg-image.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
+import firstImage from './assets/image-1.png'
+import secondImage from './assets/image-2.png'
+import thirdImage from './assets/image-3.png'
+import fourthImage from './assets/image-4.png'
+import fifthImage from './assets/image-5.png'
 
 
 
@@ -12,16 +16,16 @@ export function MainContainer() {
         <div className="hidden w-full sm:block bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
         </div>
         
-        <div className="d-none sm:flex flex-col justify-between align-items-center absolute left-[50%] translate-x-[-50%] z-0 h-full">
+        <div className="hidden sm:flex flex-col justify-between align-items-center absolute left-[50%] translate-x-[-50%] z-0 h-full">
           <div className="size-[100px] bg-gray-100"></div>
           <div className="size-[100px] bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
         </div>
 
-        <div className="sm:hidden absolute z-1 w-[100px] h-[100px] right-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat">1</div>
-        <div className="sm:hidden absolute z-1 w-[100px] h-[100px] bottom-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat">2</div>
+        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] right-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
+        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] bottom-0 bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
 
         {/*----- Content Wrapper -----*/}
-        <div className="relative sm:w-full h-screen sm:rounded-bl-[3rem] bg-gray-100 rounded-tr-[3rem] sm:rounded-tr-none rounded-bl-[3rem] z-1 pt-[4rem]">
+        <div className="relative sm:w-full h-screen rounded-bl-[3rem] rounded-tr-[3rem] sm:rounded-bl-[3rem] bg-gray-100  sm:rounded-tr-none  z-1 pt-[4rem]">
           <div className="max-w-[350px] sm:max-w-[480px] mx-auto">
             {/* Logo section */}
             <div className="text-center sm:text-start text-4xl font-extrabold text-blue-500">Logo</div>
@@ -32,7 +36,7 @@ export function MainContainer() {
             </div>
 
             {/*----- Form inputs section -----*/}
-            <form className="my-[32px]">
+            <form className="mt-[32px]">
               {/* FullName */}
               <div className="">
                 <label htmlFor="fullname" className="font-bold">Full Name</label>
@@ -85,11 +89,29 @@ export function MainContainer() {
                 className="mt-[32px] w-full bg-blue-500 hover:bg-blue-700 text-white py-3 font-semibold text-xl rounded-lg cursor-pointer"  
               >Sign Up</button>
             </form>
-
-            <div className="flex">
-              <span className="w-full border-t border-gray-400"></span>
-              <span className="-mt-[10px] mx-3 text-gray-500 text-sm">or</span>
-              <span className="w-full border-t border-gray-400"></span>
+            {/*----- "or" line seperator -----*/}
+            <div className="flex my-[32px]">
+              <span className="w-full border-t border-gray-200"></span>
+              <span className="-mt-[10px] mx-3 text-gray-400 text-sm font-bold">or</span>
+              <span className="w-full border-t border-gray-200"></span>
+            </div>
+            {/*----- Footer logo images -----*/}
+            <div className="flex justify-between max-w-[350px] m-auto">
+              <a href="#" className="sm:order-2">
+                <img src={fifthImage} alt="fifthImage" className="size-13" />
+              </a>
+              <a href="#" className="sm:order-3">
+                <img src={fourthImage} alt="fourthImage" className="size-13" />
+              </a>
+              <a href="#" className="sm:order-4">
+                <img src={thirdImage} alt="thirdImage" className="size-13" />
+              </a>
+              <a href="#" className="sm:order-5">
+                <img src={secondImage} alt="secondImage" className="size-13 " />
+              </a>
+              <a href="#" className="sm:order-1">
+                <img src={firstImage} alt="firstImage" className="size-13" />
+              </a>
             </div>
 
           </div>
