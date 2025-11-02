@@ -1,3 +1,4 @@
+import { MainBackground } from './components/MainBackground';
 import { SignupForm } from './components/SignupForm';
 import { FooterLogos } from './components/FooterLogos';
 
@@ -7,23 +8,7 @@ export function SignUp() {
   return (
     <>
       <div className="relative w-full sm:flex">
-        <div className="hidden w-full sm:flex flex-col gap-y-3 justify-center items-center bg-[#185aff] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
-        {/* Desktop Title */}
-          <span className="text-white text-6xl font-semibold">
-            Let's make every day <br />Meaningful together.
-          </span>
-          <span className="text-white font-semibold">"Building meaningful experiences together."</span>
-        </div>
-        
-        {/* Underlay boxes for rounding top and bottom center of page  */}
-        <div className="hidden sm:flex flex-col justify-between align-items-center absolute left-[50%] translate-x-[-50%] z-0 h-full">
-          <div className="size-[100px] bg-gray-100"></div>
-          <div className="size-[100px] bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat"></div>
-        </div>
-
-        {/* Underlay boxes for rounding top right and bottom left of page */}
-        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] right-0 bg-[#3971FF]"></div>
-        <div className="sm:hidden absolute z-0 w-[100px] h-[100px] bottom-0 bg-[#3971FF]"></div>
+        <MainBackground />
 
         <div className="relative sm:w-full h-screen rounded-bl-[3rem] rounded-tr-[3rem] sm:rounded-bl-[3rem] bg-gray-100  sm:rounded-tr-none z-1">
           {/*----- Content Wrapper -----*/}
