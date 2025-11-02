@@ -1,25 +1,24 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
-import firstImage from './assets/image-1.png'
-import secondImage from './assets/image-2.png'
-import thirdImage from './assets/image-3.png'
-import fourthImage from './assets/image-4.png'
-import fifthImage from './assets/image-5.png'
+import firstImage from './assets/image-1.png';
+import secondImage from './assets/image-2.png';
+import thirdImage from './assets/image-3.png';
+import fourthImage from './assets/image-4.png';
+import fifthImage from './assets/image-5.png';
 
-
-export function MainContainer() {
+export function LoginPage() {
 
   return (
     <>
       <div className="relative w-full sm:flex">
-        <div className="hidden w-full sm:flex flex-col gap-y-3 justify-center items-center bg-[#3971FF] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
-        {/* Desktop Title */}
+        <div className="hidden w-full sm:flex flex-col gap-y-3 justify-center items-center bg-[#185aff] bg-[url('/bg-image.png')] bg-center bg-cover bg-no-repeat sm:rounded-tr-[3rem] z-1">
+          {/* Desktop Title */}
           <span className="text-white text-6xl font-semibold">
             Let's make every day <br />Meaningful together.
           </span>
           <span className="text-white font-semibold">"Building meaningful experiences together."</span>
         </div>
-        
+
         {/* Underlay boxes for rounding top and bottom center of page  */}
         <div className="hidden sm:flex flex-col justify-between align-items-center absolute left-[50%] translate-x-[-50%] z-0 h-full">
           <div className="size-[100px] bg-gray-100"></div>
@@ -30,9 +29,9 @@ export function MainContainer() {
         <div className="sm:hidden absolute z-0 w-[100px] h-[100px] right-0 bg-[#3971FF]"></div>
         <div className="sm:hidden absolute z-0 w-[100px] h-[100px] bottom-0 bg-[#3971FF]"></div>
 
-        {/*----- Content Wrapper -----*/}
-        <div className="relative sm:w-full h-screen rounded-bl-[3rem] rounded-tr-[3rem] sm:rounded-bl-[3rem] bg-gray-100  sm:rounded-tr-none  z-1 pt-[4rem]">
-          <div className="max-w-[350px] sm:max-w-[480px] mx-auto">
+        <div className="relative sm:w-full h-screen rounded-bl-[3rem] rounded-tr-[3rem] sm:rounded-bl-[3rem] bg-gray-100  sm:rounded-tr-none z-1">
+          {/*----- Content Wrapper -----*/}
+          <div className="relative top-1/2 -translate-y-1/2 max-w-[350px] sm:max-w-[480px] mx-auto">
             {/* Logo section */}
             <div className="text-center sm:text-start text-4xl font-extrabold text-blue-500">Logo</div>
             {/* Desktop title section */}
@@ -46,31 +45,31 @@ export function MainContainer() {
               {/* FullName */}
               <div className="">
                 <label htmlFor="fullname" className="font-bold">Full Name</label>
-                <input 
+                <input
                   className="block w-full border border-gray-300 text-gray-500 px-4 py-3 rounded-lg"
-                  id="fullname" 
-                  type="text" 
-                  placeholder="Enter your full name" 
+                  id="fullname"
+                  type="text"
+                  placeholder="Enter your full name"
                 />
               </div>
               {/* Email */}
               <div className="mt-5">
                 <label htmlFor="email" className="font-bold">Email</label>
-                <input 
+                <input
                   className="block w-full border border-gray-300 text-gray-500 px-4 py-3 rounded-lg"
-                  id="email" 
-                  type="email" 
-                  placeholder="Enter your email" 
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
                 />
               </div>
               {/* Password */}
               <div className="relative mt-5">
                 <label htmlFor="password" className="font-bold">Password</label>
-                <input 
+                <input
                   className="block w-full border border-gray-300 text-gray-500 px-4 py-3 rounded-lg"
-                  id="password" 
-                  type="password" 
-                  placeholder="Create a password" 
+                  id="password"
+                  type="password"
+                  placeholder="Create a password"
                 />
                 <a href="#">
                   <FontAwesomeIcon icon={faEye} className="absolute right-0 top-10 mr-4 text-lg" />
@@ -79,20 +78,20 @@ export function MainContainer() {
               {/* Confirm password */}
               <div className="relative mt-5">
                 <label htmlFor="passwordconfirm" className="font-bold">Confirm Password</label>
-                <input 
+                <input
                   className="block w-full border border-gray-300 text-gray-500 px-4 py-3 rounded-lg"
-                  id="passwordconfirm" 
-                  type="password" 
-                  placeholder="Re-enter your password" 
+                  id="passwordconfirm"
+                  type="password"
+                  placeholder="Re-enter your password"
                 />
                 <a href="#">
                   <FontAwesomeIcon icon={faEye} className="absolute right-0 top-10 mr-4 text-lg" />
                 </a>
               </div>
               {/* Sign up button */}
-              <button 
+              <button
                 type="submit"
-                className="mt-[32px] w-full bg-blue-500 hover:bg-blue-700 text-white py-3 font-semibold text-xl rounded-lg cursor-pointer"  
+                className="mt-[32px] w-full bg-blue-500 hover:bg-blue-700 text-white py-3 font-semibold text-xl rounded-lg cursor-pointer"
               >Sign Up</button>
             </form>
             {/*----- "or" line seperator -----*/}
