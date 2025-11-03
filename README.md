@@ -32,7 +32,6 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
 
 ## 🛠️ Built With
 
@@ -53,7 +52,6 @@ The application will be available at `http://localhost:5173`
 ### Sign Up Page
 - User-friendly registration form
 - Social sign-up options
-- Password strength validation
 - Smooth navigation to login page
 
 ## 🎨 Design Features
@@ -91,6 +89,7 @@ This project is [MIT](LICENSE) licensed.
 ## 👤 Author
 
 - GitHub: [@nimabed](https://github.com/nimabed)
+- Email: Nima.abed.ch@gmail.com
 
 ## 🙏 Acknowledgments
 
