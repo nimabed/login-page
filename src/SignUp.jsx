@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { MainBackground } from './components/MainBackground';
 import { SignupForm } from './components/SignupForm';
 import { FooterLogos } from './components/FooterLogos';
@@ -7,6 +8,7 @@ export function SignUp() {
 
   return (
     <>
+      <title>Sign Up</title>
       <div className="relative w-full sm:flex">
         <MainBackground />
 
@@ -35,7 +37,7 @@ export function SignUp() {
 
             <div className="max-w-[320px] m-auto text-center">
               <span className="text-gray-700">Already have an account? 👉
-                <a href="#" className="underline text-blue-500 font-semibold ml-2">Sign In</a>
+                <Link to="/signin" className="underline text-blue-500 font-semibold ml-2">Sign In</Link>
               </span>
             </div>
 

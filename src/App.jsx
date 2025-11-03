@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='signup' element={<SignUp />} />
-        <Route path='login' element={<LoginPage />} />
+        <Route path='signin' element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
